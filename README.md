@@ -195,6 +195,11 @@ n_finale = 3      # final colors
 ---
 
 # 📸 Example Output
+<p align="center">
+  <img width="731" height="550" alt="2001" src="https://github.com/user-attachments/assets/087a0f6c-dad9-4fe7-8c4e-554b72a596bf" width="700" />
+  <br>
+  <em>Dominant color palette extracted using a two-stage clustering and density-based selection algorithm</em>
+</p>
 
 * Clean dominant colors
 * Accurate percentages
