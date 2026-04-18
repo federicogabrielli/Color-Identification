@@ -7,7 +7,7 @@ from sklearn.metrics import pairwise_distances
 
 
 
-def analizza_colori_avanzato(percorso, k_iniziale=12, n_finale=3):
+def analizza_colori(percorso, k_iniziale, n_finale):
 
     # =========================
     # 1. CARICAMENTO
@@ -54,7 +54,7 @@ def analizza_colori_avanzato(percorso, k_iniziale=12, n_finale=3):
             continue
 
         # =========================
-        # DOMINANTE VERO (FAST MODE)
+        # DOMINANTE (FAST MODE)
         # =========================
         if len(pixels_cluster) > 50:
         
@@ -162,9 +162,9 @@ def plot_risultato(img, colori, percentuali):
 # RUN
 # =========================
 percorso = r"C:\Users\feder\OneDrive\Pictures\Catture di schermata\Screenshot 2026-04-14 210043.png"
-img, colori, percentuali = analizza_colori_avanzato(
+img, colori, percentuali = analizza_colori(
     percorso,
-    k_iniziale=15,
+    k_iniziale=15, # da variare in base alla qualità dell'immagine
     n_finale=3
 )
 
